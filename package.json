@@ -1,0 +1,37 @@
+{
+    "main": "lib/binding.js",
+    "dependencies": {
+        "node-addon-api": "^1.1.0"
+    },
+    "scripts": {
+        "pretest": "tsc",
+        "test": "node --napi-modules ./test/test_binding.js"
+    },
+    "gypfile": true,
+    "name": "native-modules-coursework",
+    "description": "Coursework and files from my online course on native node modules in C++",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@types/node": "^7.0.22",
+        "typescript": "^2.3.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matthewkeil/native-modules-coursework.git"
+    },
+    "keywords": [
+        "'node-addon-api'",
+        "'N-API'",
+        "'C/C++'",
+        "'nodejs'",
+        "'native",
+        "modules'",
+        "'under-the-hood'"
+    ],
+    "author": "Matthew Keil",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/matthewkeil/native-modules-coursework/issues"
+    },
+    "homepage": "https://github.com/matthewkeil/native-modules-coursework#readme"
+}

@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# node files
+node_modules
+
+# node-gyp build files
+build
