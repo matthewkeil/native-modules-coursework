@@ -32,7 +32,9 @@
 *.app
 
 # node files
-node_modules
+*node_modules
+*package-lock.json
 
-# node-gyp build files
-build
+# build files
+*build
+*dist

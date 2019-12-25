@@ -1,8 +1,10 @@
 {
   'targets': [
     {
-      'target_name': 'native-modules-coursework-native',
-      'sources': [ 'src/native_modules_coursework.cc' ],
+      'target_name': 'native-modules-coursework',
+      'sources': [ 
+        'src/addon.cc'
+      ],
       'include_dirs': ["<!@(node -p \"require('node-addon-api').include\")"],
       'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
       'cflags!': [ '-fno-exceptions' ],
