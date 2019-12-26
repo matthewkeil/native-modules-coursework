@@ -2,6 +2,7 @@
 
 void InitSection2(Napi::Env env, Napi::Object &exports)
 {
-    exports.Set(Napi::String::New(env, "section2"),
-                Napi::String::New(env, "world"));
+    Napi::String key = Napi::String::New(env, "section2");
+    Napi::String value = Napi::String::New(env, "hello world");
+    exports.Set(key, value);
 }

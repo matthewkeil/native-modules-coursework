@@ -1,16 +1,24 @@
 const bindings: Bindings = require("../build/Release/native-modules-coursework");
 
 interface Bindings {
+  section2: string;
   section3: {
-    boolean: boolean;
-    number: number;
-    string: string;
+    undefined: undefined;
+    null: null;
     symbol: Symbol;
-    array: number[];
+    boolean: boolean;
+    string: string;
+    number: number;
+    array: any[];
+    // available in N-API 4
+    // bigInt: BigInt;
+    // date: Date;
   };
-  example3: () => string;
-  example4: (arg: string) => string;
-  example5: (arg: string, cb: (arg: string) => void) => void;
+  section4: {
+    returnsAValue: () => string;
+    takesAParameter: (arg: string) => string;
+    takesACallback: (arg: string, cb: (arg: string) => void) => void;
+  };
 
   // ObjectReference
   // PropertyDescriptor
@@ -23,13 +31,8 @@ interface Bindings {
 }
 
 class NativeModulesCoursework {
-  //   public example1 = bindings.example1;
-  //   public example2 = bindings.example2;
-  //   public example3 = bindings.example3;
-  //   public example4 = bindings.example4;
-  //   public example5 = bindings.example5;
-  //   public example6 = bindings.example6;
-  //   public example7 = bindings.example7;
+  public section2 = bindings.section2;
+  public section3 = bindings.section3;
 }
 
 export = NativeModulesCoursework;
